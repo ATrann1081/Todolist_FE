@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Genos&display=swap");
 
-.loginForm {
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,23 +24,36 @@
   position: relative;
 }
 
-.loginForm form {
+.container form {
   background: rgba(255, 198, 151, 0.14);
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 32px 24px;
   left: 480px;
   top: 209px;
-  width: 480px;
-
+  width: 653px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: stretch;
 }
 
+.title {
+  color: #d25f00;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
 .inputGroup1,
-.inputGroup2 {
+.Current,
+.New,
+.Confirm {
   display: flex;
   flex-direction: column;
 
@@ -59,7 +72,7 @@
     font-family: "Genos", sans-serif;
     outline: none;
     background-color: #ffffff;
-    width: 441px;
+    width: 590px;
     height: 48px;
     margin: 0 auto;
 
@@ -70,7 +83,7 @@
 }
 
 .submitButton {
-  background-color: rgba(210, 95, 0, 0.7);
+  background-color: #058e03;
   border: none;
   border-radius: 24px;
   padding: 12px 0;
@@ -81,13 +94,13 @@
   margin-top: 19px;
   transition: background 0.3s ease;
   &:hover {
-    background-color: #b14c00;
+    background-color: #076306;
   }
 }
 
 .text10 {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Genos", sans-serif;
 }
 
@@ -97,50 +110,6 @@
   align-items: center;
   gap: 4px;
   margin-top: 16px;
-}
-
-.forgot {
-  text-align: center;
-  font-size: 18px;
-  color: #d25e00;
-  margin-bottom: 4px;
-  text-decoration: underline;
-  cursor: pointer;
-  font-family: "Genos", sans-serif;
-}
-
-.frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
-.text3 {
-  color: #272727;
-  font-size: 18px;
-  font-family: "SF Pro Display", sans-serif;
-}
-
-.text2 {
-  color: #d25f00;
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.signup {
-  color: #d25e00;
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 18px;
-  font-family: "Genos", sans-serif;
 }
 
 .error {
