@@ -27,13 +27,12 @@ export default function LoginPage() {
       <div className={styles.loginForm}>
         <div className={styles.div}>
           <div className={styles.wrapper}>
-            <div className={styles.text2}>Sign in</div>
+            <div className={styles.title}>Sign in</div>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className={styles.inputGroup1}>
                 <label>Email</label>
                 <input
-                  className={styles.text5}
-                  type="email"
+                  type="text"
                   placeholder="Enter your email"
                   {...register("email", {
                     required: "Vui lòng nhập email",
@@ -43,10 +42,10 @@ export default function LoginPage() {
                     },
                     pattern: {
                       value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
-                      message: "Email phải là gmail hợp lệ",
+                      message: "Email không hợp lệ",
                     },
                     validate: (value) =>
-                      !/\s/.test(value) || "Email không được chứa dấu cách",
+                      !/\s/.test(value) || "Email không chứa dấu cách",
                   })}
                 />
                 {errors.email && (
@@ -57,7 +56,6 @@ export default function LoginPage() {
               <div className={styles.inputGroup2}>
                 <label>Password</label>
                 <input
-                  className={styles.text5}
                   type="password"
                   placeholder="Enter your password"
                   {...register("password", {
