@@ -1,0 +1,174 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 0 24px; /* thêm khoảng cách hai bên */
+}
+
+.newTask {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(210, 95, 0, 0.14);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 40px 24px 0 24px; 
+}
+
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #d25f00;
+  font-family: "Playfair Display", serif;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.taskContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 60%;
+}
+
+.taskTitle {
+  font-size: 16px; /* nhỏ hơn */
+  font-weight: 600;
+  color: #333;
+  word-break: break-word;
+}
+
+.taskDesc {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  color: #666;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.taskActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.btnEdit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 6px;
+  &:hover {
+    background: #f1f1f1;
+  }
+}
+
+.btnDelete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  &:hover {
+    background: #c0392b;
+  }
+}
+
+.inputEdit {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  width: 220px;
+}
+
+.btnSave {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background: #388e3c;
+  }
+}
+
+.newTask {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(210, 95, 0, 0.14);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.btnAdd {
+  background: #d25f00;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #b14c00;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+}
+
+.inputNew {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+  &:focus {
+    border-color: #d25f00;
+  }
+}
