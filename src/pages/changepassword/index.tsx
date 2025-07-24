@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import LoginLayout from "@/layouts/login";
+import LoginLayout from "@/layouts/auth";
 import styles from "@/styles/changepassword/index.module.scss";
 
 type ChangePasswordInputs = {
