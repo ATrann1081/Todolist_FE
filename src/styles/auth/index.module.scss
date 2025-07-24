@@ -3,8 +3,15 @@
 .loginForm {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: #f8f9fa; // nền sáng nhẹ
+}
+
+.div {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
 }
 
 .wrapper {
@@ -14,14 +21,8 @@
   padding: 40px 20px;
   border-radius: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   margin: 0 auto;
-}
-
-.div {
-  width: 100%;
-  max-width: 1440px;
-  position: relative;
 }
 
 .loginForm form {
@@ -29,8 +30,6 @@
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 32px 24px;
-  left: 480px;
-  top: 209px;
   width: 480px;
 
   display: flex;
@@ -43,6 +42,7 @@
 .inputGroup2 {
   display: flex;
   flex-direction: column;
+  font-size: 4rem;
 
   label {
     font-size: 18px;
@@ -80,6 +80,7 @@
   cursor: pointer;
   margin-top: 19px;
   transition: background 0.3s ease;
+
   &:hover {
     background-color: #b14c00;
   }
@@ -87,7 +88,7 @@
 
 .text10 {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Genos", sans-serif;
 }
 
@@ -97,16 +98,6 @@
   align-items: center;
   gap: 4px;
   margin-top: 16px;
-}
-
-.forgot {
-  text-align: center;
-  font-size: 18px;
-  color: #d25e00;
-  margin-bottom: 4px;
-  text-decoration: underline;
-  cursor: pointer;
-  font-family: "Genos", sans-serif;
 }
 
 .frame {
@@ -124,7 +115,7 @@
   font-family: "SF Pro Display", sans-serif;
 }
 
-.title {
+.text2 {
   color: #d25f00;
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -145,4 +136,7 @@
 
 .error {
   color: #ff0000;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
 }
