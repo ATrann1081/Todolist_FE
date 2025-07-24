@@ -59,7 +59,7 @@ export default function SignUpPage() {
                                 <label>Email</label>
                                 <input
                                     className={styles.text5}
-                                    type="email"
+                                    type="text"
                                     placeholder="Enter your email"
                                     {...register("email", {
                                         required: "Vui lòng nhập email",
@@ -69,7 +69,7 @@ export default function SignUpPage() {
                                         },
                                         pattern: {
                                             value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
-                                            message: "Email phải là gmail hợp lệ",
+                                            message: "Vui lòng nhập đúng định dạng Gmail",
                                         },
                                         validate: (value) =>
                                             !/\s/.test(value) || "Email không được chứa dấu cách",
@@ -90,7 +90,7 @@ export default function SignUpPage() {
                                     {...register("password", {
                                         required: "Vui lòng nhập mật khẩu",
                                         minLength: {
-                                            value: 8,
+                                            value: 6,
                                             message: "Mật khẩu phải có ít nhất 8 ký tự",
                                         },
                                         maxLength: {
