@@ -1,9 +1,9 @@
 import Link from "next/link"; 
+import TodosLayout from "@/layouts/todos";
 
-export default function todosPage() {
+export default function TodosPage() {
   return (
-    <Link href="/login">
-    <div> Press to Login </div>
-    </Link>
+    <TodosLayout>
+    </TodosLayout>
   );
 }

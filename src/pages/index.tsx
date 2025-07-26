@@ -1,9 +1,14 @@
-import Link from "next/link"; 
+// import Link from "next/link"; 
+import TodosPage from "./todos";
+import LoginPage from "./login";
+
 
 export default function HomePage() {
   return (
-    <Link href="/login">
-    <div> Press to Login </div>
-    </Link>
+    <LoginPage>
+    </LoginPage>
+    // <TodosPage> 
+    // </TodosPage>
+
   );
 }

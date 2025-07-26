@@ -1,7 +1,9 @@
-import React from 'react';
+import Header_common from "@/components/common/header";
+import React from "react";
 
-export default function TodosPage() {
+export default function TodosLayout() {
   return (
-    
+    <Header_common>
+    </Header_common>
   );
 }
