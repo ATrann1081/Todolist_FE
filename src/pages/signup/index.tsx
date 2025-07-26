@@ -59,7 +59,7 @@ export default function SignUpPage() {
                                 <label>Email</label>
                                 <input
                                     className={styles.text5}
-                                    type="email"
+                                    type="text"
                                     placeholder="Enter your email"
                                     {...register("email", {
                                         required: "Vui lòng nhập email",
