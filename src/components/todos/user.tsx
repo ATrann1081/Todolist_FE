@@ -5,7 +5,7 @@
 // useEffect: để thực hiện side effects
 import React, { useState, useRef, useEffect } from "react";
 
-export default function UserPopupButton() {
+export default function UserPopup() {
   const [open, setOpen] = useState(false);
   
   // buttonRef, popupRef: tham chiếu đến button, popup
